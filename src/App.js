@@ -1,14 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import ShowProject from "./components/ShowProject";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/showproject" element={<ShowProject />}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
