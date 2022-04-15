@@ -1,0 +1,26 @@
+.textbox span::after {
+    content: "";
+    position: absolute;    
+    left: 0;
+    right: 10;
+    height: 5%;
+    border-left: 1px solid black;
+    background-color: white;
+    animation: 5s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes textType {
+    25%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
