@@ -20,13 +20,13 @@ function Home() {
     return (
         <div className="select-none w-screen h-screen bg-green-100 flex flex-col items-center justify-center px-5 py-5">
             <div className='flex flex-col mb-5 font-bold text-green-900 text-3xl'>
-            <button onClick={typeWriter}>Click me</button>
-            <p id="demo" className="cursor-pointer" onClick={()=>navigate('/showproject')}></p>
+            <button onClick={typeWriter} className='font-bold'>Click me</button>
+            <p id="demo" className="cursor-pointer" ></p>
 
 
 
             </div>
-            <div className="bg-gray-200 text-gray-600 text-sm rounded-lg shadow-2xl overflow-hidden p-5" >
+            <div className="bg-gray-200 text-gray-400 text-sm rounded-lg shadow-2xl overflow-hidden p-5" >
                 
                 <div className="flex -mx-1">
                 <div className="w-12 px-1 mb-4">
@@ -70,7 +70,7 @@ function Home() {
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">O</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
-                    <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">P</button>
+                    <button className="block w-full h-10 rounded bg-green-600 text-white hover:bg-white hover:text-green-600 shadow focus:outline-none text-center leading-none" onClick={()=>navigate('/showproject')}>P</button>
                 </div>
                 </div>
                 <div className="flex -mx-1 justify-center">
@@ -78,7 +78,8 @@ function Home() {
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">A</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
-                    <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">S</button>
+                    <button className="block w-full h-10 rounded bg-blue-500 text-white hover:bg-white hover:text-blue-500 shadow focus:outline-none text-center leading-none"
+                    onClick={()=>navigate('/skill')}>S</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">D</button>
@@ -115,13 +116,13 @@ function Home() {
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">X</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
-                    <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">C</button>
+                    <button className="block w-full h-10 rounded bg-red-600 text-white hover:bg-white hover:text-red-600 shadow focus:outline-none text-center leading-none" onClick={()=>navigate('/contact')}>C</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">V</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
-                    <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">B</button>
+                    <button className="block w-full h-10 rounded bg-yellow-400 text-white hover:bg-white hover:text-yellow-400 shadow focus:outline-none text-center leading-none" onClick={()=>navigate('/back')}>B</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">N</button>
