@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Back.css'
 
 function Back() {
@@ -15,8 +15,8 @@ function Back() {
                         Worning
                     </div>
                     <h1 className='my-4 text-2xl font-semibold text-center'>Please Contact Me</h1>
-                    <p>Come Back</p>
-            
+                    <a href='https://programmers.co.kr/pr/avantgard7_7923'>My Resume</a>
+                    
             </div>
         </div>
 
