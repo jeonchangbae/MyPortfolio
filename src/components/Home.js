@@ -30,8 +30,8 @@ function Home() {
                 
                 <div className="flex -mx-1">
                 <div className="w-12 px-1 mb-4">
-                    <button className="block w-full h-8 hover:text-red-500 focus:outline-none text-center leading-none" onClick={()=>navigate('/')}>
-                    <i className="mdi mdi-camera text-2xl"></i>
+                    <button className="block w-full h-8 hover:text-red-500 focus:outline-none text-center leading-none" onClick={()=>navigate('/picture')}>
+                    <i className="mdi mdi-camera text-2xl" onClick={()=>navigate('/picture')}></i>
                     </button>
                 </div>
                 <div className="flex-1 px-1 mb-4 relative">
@@ -52,7 +52,7 @@ function Home() {
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">E</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
-                    <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">R</button>
+                <button className="block w-full h-10 rounded bg-yellow-400 text-white hover:bg-white hover:text-yellow-400 shadow focus:outline-none text-center leading-none" onClick={()=>navigate('/back')}>R</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">T</button>
@@ -122,7 +122,7 @@ function Home() {
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">V</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
-                    <button className="block w-full h-10 rounded bg-yellow-400 text-white hover:bg-white hover:text-yellow-400 shadow focus:outline-none text-center leading-none" onClick={()=>navigate('/back')}>B</button>
+                    <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">B</button>
                 </div>
                 <div className="w-12 px-1 mb-2 shadow-xl">
                     <button className="block w-full h-10 rounded bg-gray-100 hover:bg-red-600 hover:text-white shadow focus:outline-none text-center leading-none">N</button>

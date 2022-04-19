@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './Back.css'
 
 function Back() {
@@ -11,11 +11,11 @@ function Back() {
                 <div className='flex justify-end w-full'> <button className="hover:text-red-500 focus:outline-none text-center leading-none" >
                         <i className="mdi mdi-close-box text-2xl" onClick={()=>navigate('/')}></i>
                     </button></div>
-                    <div className='flex flex-row items-center justify-center gap-5'>
-                        Worning
+                    <div className='flex flex-row items-center justify-center gap-5 text-xl'>
+                        Jeon's Resume
                     </div>
                     <h1 className='my-4 text-2xl font-semibold text-center'>Please Contact Me</h1>
-                    <a href='https://programmers.co.kr/pr/avantgard7_7923'>My Resume</a>
+                    <a href='https://programmers.co.kr/pr/avantgard7_7923' className='flex justify-center align-middle font-bold text-3xl text-gray-500 mt-5'>Click Here!</a>
                     
             </div>
         </div>
